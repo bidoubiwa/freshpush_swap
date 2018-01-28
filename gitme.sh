@@ -6,5 +6,7 @@ if [[  $REPLY =~ ^[Yy]$ ]]
 then
 	git commit -m "$1"
 	git push
+	echoe "\n Commit Completed"
+else
+	echo "\nABORDED"
 fi
-echo "\nABORDED"
